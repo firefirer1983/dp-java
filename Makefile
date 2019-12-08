@@ -3,22 +3,25 @@ JC = javac
 JVM= java 
 FILE=
 
-.PHONY: clean run default classes
+PACKAGE=`echo $(target) | tr A-Z a-z`
+
+.PHONY: clean run default
 .SUFFIXES: .java .class
 
 .java.class:
 	$(JC) $(JFLAGS) $*.java
 
-CLASSES = \
-        com/dp/Singleton.java
+singletons = \
+        Singleton.java \
+        SingleTiles.java \
+        SingletonThreadSafe.java \
+        TaskGetTile.java \
+        TestSingletonThreadSafe.java
 
-
-default: classes
-
-classes: $(CLASSES:.java=.class)
+singleton: $(singletons:.java=.class)
 
 run:
-	@$(JVM) com/dp/$(target)
+	@$(JVM) com/dp/$(PACKAGE)/$(target)
 
 
 clean:
