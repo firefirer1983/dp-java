@@ -11,14 +11,47 @@ PACKAGE=`echo $(target) | tr A-Z a-z`
 .java.class:
 	$(JC) $(JFLAGS) $*.java
 
-singletons = \
-        Singleton.java \
-        SingleTiles.java \
-        SingletonThreadSafe.java \
-        TaskGetTile.java \
-        TestSingletonThreadSafe.java
+singleton_src = \
+        singleton/Singleton.java \
+        singleton/SingleTiles.java \
+        singleton/SingletonThreadSafe.java \
+        singleton/TaskGetTile.java \
+        singleton/TestSingletonThreadSafe.java
 
-singleton: $(singletons:.java=.class)
+
+builder_src = \
+        builder/RobotPlan.java \
+        builder/Robot.java \
+        builder/RobotBuilder.java \
+        builder/IronManBuilder.java \
+        builder/TestBuilder.java
+
+
+abstractfactory_src = abstractfactory/Button.java \
+                      abstractfactory/CheckBox.java \
+                      abstractfactory/IOSButton.java \
+                      abstractfactory/IOSCheckBox.java \
+                      abstractfactory/WindowsButton.java \
+                      abstractfactory/WindowsCheckBox.java \
+                      abstractfactory/UIFactory.java \
+                      abstractfactory/WindowsUIFactory.java \
+                      abstractfactory/IOSUIFactory.java \
+                      abstractfactory/AbstractFactory.java
+
+
+factorymethod_src = factorymethod/EnemyShip.java \
+                    factorymethod/RockShip.java \
+                    factorymethod/Ufo.java \
+                    factorymethod/ShipFactory.java \
+                    factorymethod/FactoryMethod.java
+
+builder: $(builder_src:.java=.class)
+
+singleton: $(singleton_src:.java=.class)
+
+abstractfactory: $(abstractfactory_src:.java=.class)
+
+factorymethod: $(factorymethod_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
