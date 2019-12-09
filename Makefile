@@ -45,6 +45,13 @@ factorymethod_src = factorymethod/EnemyShip.java \
                     factorymethod/ShipFactory.java \
                     factorymethod/FactoryMethod.java
 
+
+adapter_src = adapter/RoundPeg.java \
+              adapter/RoundHole.java \
+              adapter/SquarePeg.java \
+              adapter/SquarePegAdapter.java \
+              adapter/Adapter.java
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -52,6 +59,9 @@ singleton: $(singleton_src:.java=.class)
 abstractfactory: $(abstractfactory_src:.java=.class)
 
 factorymethod: $(factorymethod_src:.java=.class)
+
+adapter: $(adapter_src:.java=.class)
+
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
