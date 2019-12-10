@@ -52,6 +52,16 @@ adapter_src = adapter/RoundPeg.java \
               adapter/SquarePegAdapter.java \
               adapter/Adapter.java
 
+
+bridge_src = bridge/Device.java \
+             bridge/RadioDevice.java \
+             bridge/TVDevice.java \
+             bridge/Remote.java \
+             bridge/StupidRemote.java \
+             bridge/SmartRemote.java \
+             bridge/Bridge.java
+
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -61,6 +71,8 @@ abstractfactory: $(abstractfactory_src:.java=.class)
 factorymethod: $(factorymethod_src:.java=.class)
 
 adapter: $(adapter_src:.java=.class)
+
+bridge: $(bridge_src:.java=.class)
 
 
 run:
