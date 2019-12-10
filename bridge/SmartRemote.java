@@ -5,7 +5,6 @@ class SmartRemote extends StupidRemote {
     private int unmuteVolumn = 0;
     public SmartRemote(Device device) {
         super(device);
-        super.device = device;
         unmuteVolumn = device.getVolumn();
     }
 
