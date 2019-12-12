@@ -62,6 +62,11 @@ bridge_src = bridge/Device.java \
              bridge/Bridge.java
 
 
+proxy_src = proxy/Video.java \
+            proxy/YoutubeService.java \
+            proxy/YoutubeProxy.java \
+            proxy/Proxy.java
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -74,6 +79,7 @@ adapter: $(adapter_src:.java=.class)
 
 bridge: $(bridge_src:.java=.class)
 
+proxy: $(proxy_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
