@@ -82,6 +82,13 @@ flyweight_src = flyweight/Coordinate.java \
                 flyweight/FlyWeight.java
 
 
+composite_src = composite/FileComponent.java \
+                composite/Directory.java \
+                composite/ImageFile.java \
+                composite/VideoFile.java \
+                composite/Composite.java
+
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -100,6 +107,8 @@ proxy: $(proxy_src:.java=.class)
 
 flyweight: $(flyweight_src:.java=.class)
 
+
+composite: $(composite_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
