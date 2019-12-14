@@ -62,6 +62,15 @@ bridge_src = bridge/Device.java \
              bridge/Bridge.java
 
 
+
+decorator_src = decorator/DataSource.java \
+                decorator/FileDataSource.java \
+                decorator/DataSourceDecorator.java \
+                decorator/CodecDecorator.java \
+                decorator/CompressDecorator.java \
+                decorator/Decorator.java
+
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -74,6 +83,7 @@ adapter: $(adapter_src:.java=.class)
 
 bridge: $(bridge_src:.java=.class)
 
+decorator: $(decorator_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
