@@ -75,6 +75,13 @@ proxy_src = proxy/Video.java \
             proxy/YoutubeProxy.java \
             proxy/Proxy.java
 
+flyweight_src = flyweight/Coordinate.java \
+                flyweight/IChess.java \
+                flyweight/Chess.java \
+                flyweight/ChessFactory.java \
+                flyweight/FlyWeight.java
+
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -90,6 +97,9 @@ bridge: $(bridge_src:.java=.class)
 decorator: $(decorator_src:.java=.class)
 
 proxy: $(proxy_src:.java=.class)
+
+flyweight: $(flyweight_src:.java=.class)
+
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
