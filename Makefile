@@ -89,6 +89,13 @@ composite_src = composite/FileComponent.java \
                 composite/Composite.java
 
 
+chainofresp_src = chainofresp/LeaveRequest.java \
+                  chainofresp/Leader.java \
+                  chainofresp/Director.java \
+                  chainofresp/Manger.java \
+                  chainofresp/President.java \
+                  chainofresp/ChainOfResp.java
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -107,8 +114,9 @@ proxy: $(proxy_src:.java=.class)
 
 flyweight: $(flyweight_src:.java=.class)
 
-
 composite: $(composite_src:.java=.class)
+
+chainofresp: $(chainofresp_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
