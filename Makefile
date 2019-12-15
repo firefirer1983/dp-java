@@ -96,8 +96,8 @@ chainofresp_src = chainofresp/LeaveRequest.java \
                   chainofresp/President.java \
                   chainofresp/ChainOfResp.java
 
-mediator_src = mediator/Manager.java \
-                  mediator/Department.java \
+mediator_src = mediator/Department.java \
+                  mediator/Manager.java \
                   mediator/Development.java \
                   mediator/Financial.java \
                   mediator/Market.java \

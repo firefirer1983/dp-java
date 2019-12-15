@@ -2,8 +2,10 @@ package com.dp.mediator;
 
 
 class Financial implements Department {
+    private Manager manager;
     public Financial(Manager m) {
-        super(m);
+        super();
+        this.manager = m;
     }
 
     public void selfJob() {
@@ -11,6 +13,6 @@ class Financial implements Department {
     }
 
     public void outSourceJob(String d) {
-        m.command(d);
+        manager.command(d);
     }
 }

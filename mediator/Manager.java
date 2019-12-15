@@ -1,13 +1,13 @@
 package com.dp.mediator;
 import java.util.HashMap;
 
-class Mananger {
+class Manager {
 
     private HashMap<String, Department> deps = new HashMap<String, Department>();
 
     void register(String name, Department d) {
         if (! deps.containsKey(name)) {
-            deps.put(name) = d;
+            deps.put(name, d);
         }
     }
 

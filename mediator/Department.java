@@ -1,12 +1,7 @@
 package com.dp.mediator;
 
 
-abstract class Department {
-    private Manager m;
-
-    public Department(Manager m) {
-        this.m = m;
-    }
+public interface Department {
 
     abstract void selfJob();
     abstract void outSourceJob(String to);

@@ -5,15 +5,15 @@ class Mediator {
     public static void main(String[] args) {
         Manager m = new Manager();
 
-        Development delp = new Development();
-        Market market = new Market();
-        Financial finan = new Financial();
+        Development delp = new Development(m);
+        Market market = new Market(m);
+        Financial finan = new Financial(m);
 
-        m.register(delp, "development");
-        m.register(market, "market");
-        m.register(finan, "financial");
+        m.register("development", delp);
+        m.register("market", market);
+        m.register("financial", finan);
 
         delp.selfJob();
-        delp.outSourceJob("market");
+        delp.outSourceJob("financial");
     }
 }
