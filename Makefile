@@ -106,6 +106,7 @@ mediator_src = mediator/Department.java \
 
 command_src = command/ICommand.java \
               command/Receiver.java \
+              command/PateCommand.java \
               command/CopyCommand.java \
               command/Invoker.java \
               command/Command.java

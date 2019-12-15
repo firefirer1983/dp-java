@@ -9,7 +9,7 @@ class Receiver {
         this.os = os;
     }
 
-    void action() {
-        System.out.println(this.os + " execute copy action!");
+    void action(String act) {
+        System.out.println(this.os + " execute " + act + "action!");
     }
 }

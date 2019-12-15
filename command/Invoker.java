@@ -1,14 +1,21 @@
 package com.dp.command;
+import java.util.List;
+import java.util.ArrayList;
 
 
 class Invoker {
-    private ICommand cmd;
+    private List<ICommand> cmdList = new ArrayList<ICommand>();
 
-    public Invoker(ICommand cmd) {
-        this.cmd = cmd;
+    public Invoker() {
     }
 
-    public void call() {
-        cmd.execute();
+    public void execute(ICommand cmd) {
+        cmdList.add(cmd);
+    }
+
+    public void commit() {
+        for(ICommand command: cmdList) {
+            command.execute();
+        }
     }
 }

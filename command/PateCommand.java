@@ -2,11 +2,11 @@ package com.dp.command;
 import java.util.ArrayList;
 import java.util.List;
 
-class CopyCommand implements ICommand {
+class PasteCommand implements ICommand {
 
     private List<Receiver> receivers = new ArrayList<Receiver>();
 
-    public CopyCommand() {
+    public PasteCommand() {
         receivers.add(new Receiver("MAC"));
         receivers.add(new Receiver("Windows"));
         receivers.add(new Receiver("Ubuntu"));
@@ -14,7 +14,7 @@ class CopyCommand implements ICommand {
 
     public void execute() {
         for(Receiver r: receivers) {
-            r.action("copy");
+            r.action("paste");
         }
     }
 }
