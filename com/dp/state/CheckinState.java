@@ -18,6 +18,7 @@ class CheckinState implements RoomState {
 
     public void checkout() {
         room.changeState(new VacancyState(room));
+        System.out.println(room.num +" checkout success!");
     }
 
     public void book() {

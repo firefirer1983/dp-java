@@ -133,6 +133,15 @@ memento_src = memento/EmployeeMemento.java \
               memento/CareTaker.java \
               memento/Memento.java \
 
+
+state_src = com/dp/state/Room.java \
+            com/dp/state/RoomState.java \
+            com/dp/state/CheckinState.java \
+            com/dp/state/BookedState.java \
+            com/dp/state/VacancyState.java \
+            com/dp/state/State.java
+
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -166,6 +175,9 @@ templatemethod: $(templatemethod_src:.java=.class)
 observer: $(observer_src:.java=.class)
 
 memento: $(memento_src:.java=.class)
+
+state: $(state_src:.java=.class)
+
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)

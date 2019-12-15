@@ -10,14 +10,17 @@ class BookedState implements RoomState {
 
     public void checkin() {
         this.room.changeState(new CheckinState(room));
+        System.out.println(room.num + " checkin success!");
     }
 
     public void unbook() {
         this.room.changeState(new VacancyState(room));
+        System.out.println(room.num + " unbook success!");
     }
 
     public void checkout() {
         unbook();
+        System.out.println(room.num + " unbook success!");
     }
 
     public void book() {

@@ -11,6 +11,7 @@ class VacancyState implements RoomState {
     public void checkin() {
         room.changeState(new BookedState(room));
         room.changeState(new CheckinState(room));
+        System.out.println(room.num +" checkin success!");
     }
 
     public void unbook() {
@@ -23,5 +24,6 @@ class VacancyState implements RoomState {
 
     public void book() {
         room.changeState(new BookedState(room));
+        System.out.println(room.num + " book success!");
     }
 }
