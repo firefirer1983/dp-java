@@ -104,6 +104,12 @@ mediator_src = mediator/Department.java \
                   mediator/Mediator.java
 
 
+command_src = command/ICommand.java \
+              command/Receiver.java \
+              command/CopyCommand.java \
+              command/Invoker.java \
+              command/Command.java
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -127,6 +133,8 @@ composite: $(composite_src:.java=.class)
 chainofresp: $(chainofresp_src:.java=.class)
 
 mediator: $(mediator_src:.java=.class)
+
+command: $(command_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
