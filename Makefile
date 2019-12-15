@@ -128,6 +128,11 @@ observer_src = observer/IObserver.java \
                observer/WeChatGroup.java \
                observer/Observer.java \
 
+memento_src = memento/EmployeeMemento.java \
+              memento/Employee.java \
+              memento/CareTaker.java \
+              memento/Memento.java \
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -159,6 +164,8 @@ strategy: $(strategy_src:.java=.class)
 templatemethod: $(templatemethod_src:.java=.class)
 
 observer: $(observer_src:.java=.class)
+
+memento: $(memento_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
