@@ -122,6 +122,12 @@ strategy_src = strategy/IStrategy.java \
 templatemethod_src = templatemethod/BankingMethod.java \
                      templatemethod/TemplateMethod.java
 
+observer_src = observer/IObserver.java \
+               observer/Subject.java \
+               observer/WeChatClient.java \
+               observer/WeChatGroup.java \
+               observer/Observer.java \
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -151,6 +157,8 @@ command: $(command_src:.java=.class)
 strategy: $(strategy_src:.java=.class)
 
 templatemethod: $(templatemethod_src:.java=.class)
+
+observer: $(observer_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
