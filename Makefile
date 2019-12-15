@@ -96,6 +96,14 @@ chainofresp_src = chainofresp/LeaveRequest.java \
                   chainofresp/President.java \
                   chainofresp/ChainOfResp.java
 
+mediator_src = mediator/Manager.java \
+                  mediator/Department.java \
+                  mediator/Development.java \
+                  mediator/Financial.java \
+                  mediator/Market.java \
+                  mediator/Mediator.java
+
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -117,6 +125,8 @@ flyweight: $(flyweight_src:.java=.class)
 composite: $(composite_src:.java=.class)
 
 chainofresp: $(chainofresp_src:.java=.class)
+
+mediator: $(mediator_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
