@@ -111,6 +111,14 @@ command_src = command/ICommand.java \
               command/Invoker.java \
               command/Command.java
 
+strategy_src = strategy/IStrategy.java \
+               strategy/NewFewStrategy.java \
+               strategy/NewManyStrategy.java \
+               strategy/OldFewStrategy.java \
+               strategy/OldManyStrategy.java \
+               strategy/Context.java \
+               strategy/Strategy.java
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -136,6 +144,8 @@ chainofresp: $(chainofresp_src:.java=.class)
 mediator: $(mediator_src:.java=.class)
 
 command: $(command_src:.java=.class)
+
+strategy: $(strategy_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
