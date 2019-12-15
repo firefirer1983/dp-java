@@ -1,4 +1,4 @@
-package com.dp.abstractfactory;
+package abstractfactory;
 
 class IOSButton implements Button {
 

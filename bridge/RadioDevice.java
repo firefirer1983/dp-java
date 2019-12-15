@@ -1,4 +1,4 @@
-package com.dp.bridge;
+package bridge;
 
 class RadioDevice implements Device {
     private int volumn = 0;

@@ -1,4 +1,4 @@
-package com.dp.bridge;
+package bridge;
 
 class StupidRemote implements Remote {
     protected Device device;

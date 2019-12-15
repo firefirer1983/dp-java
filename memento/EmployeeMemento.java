@@ -1,4 +1,4 @@
-package com.dp.memento;
+package memento;
 
 class EmployeeMemento {
     private String name;

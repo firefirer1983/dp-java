@@ -119,6 +119,7 @@ strategy_src = strategy/IStrategy.java \
                strategy/Context.java \
                strategy/Strategy.java
 
+
 templatemethod_src = templatemethod/BankingMethod.java \
                      templatemethod/TemplateMethod.java
 
@@ -140,6 +141,15 @@ state_src = com/dp/state/Room.java \
             com/dp/state/BookedState.java \
             com/dp/state/VacancyState.java \
             com/dp/state/State.java
+
+
+visitor_src = visitor/Visitable.java \
+              visitor/Liqor.java \
+              visitor/Necessity.java \
+              visitor/Tobacco.java \
+              visitor/IVisitor.java \
+              visitor/TaxVisitor.java \
+              visitor/Visitor.java
 
 
 builder: $(builder_src:.java=.class)
@@ -178,9 +188,10 @@ memento: $(memento_src:.java=.class)
 
 state: $(state_src:.java=.class)
 
+visitor: $(visitor_src:.java=.class)
 
 run:
-	@$(JVM) com/dp/$(PACKAGE)/$(target)
+	@$(JVM) $(PACKAGE)/$(target)
 
 
 clean:

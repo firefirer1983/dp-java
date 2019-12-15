@@ -1,4 +1,4 @@
-package com.dp.testsingletonthreadsafe;
+package testsingletonthreadsafe;
 
 import java.util.LinkedList;
 import java.util.Arrays;

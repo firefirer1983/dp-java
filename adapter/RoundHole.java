@@ -1,4 +1,4 @@
-package com.dp.adapter;
+package adapter;
 
 
 class RoundHole {

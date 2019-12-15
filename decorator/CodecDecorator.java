@@ -1,4 +1,4 @@
-package com.dp.decorator;
+package decorator;
 
 
 class CodecDecorator extends DataSourceDecorator {

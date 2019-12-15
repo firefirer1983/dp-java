@@ -1,4 +1,4 @@
-package com.dp.bridge;
+package bridge;
 
 
 class Bridge {

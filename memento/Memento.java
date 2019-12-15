@@ -1,4 +1,4 @@
-package com.dp.memento;
+package memento;
 
 
 class Memento {

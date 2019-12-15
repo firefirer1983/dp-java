@@ -1,4 +1,4 @@
-package com.dp.chainofresp;
+package chainofresp;
 
 
 abstract class Leader {

@@ -1,4 +1,4 @@
-package com.dp.chainofresp;
+package chainofresp;
 
 
 class President extends Leader {

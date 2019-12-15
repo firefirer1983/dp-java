@@ -1,4 +1,4 @@
-package com.dp.singleton;
+package singleton;
 
 class Singleton {
 

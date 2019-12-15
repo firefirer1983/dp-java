@@ -1,4 +1,4 @@
-package com.dp.observer;
+package observer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;

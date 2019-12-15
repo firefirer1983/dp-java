@@ -1,4 +1,4 @@
-package com.dp.builder;
+package builder;
 
 public class TestBuilder {
     private static Robot makeRobot() {

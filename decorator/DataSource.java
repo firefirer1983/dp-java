@@ -1,4 +1,4 @@
-package com.dp.decorator;
+package decorator;
 
 public interface DataSource {
     String readData();

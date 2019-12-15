@@ -1,4 +1,4 @@
-package com.dp.factorymethod;
+package factorymethod;
 
 abstract class EnemyShip {
     abstract void attack();

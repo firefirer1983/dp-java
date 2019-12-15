@@ -1,4 +1,4 @@
-package com.dp.mediator;
+package mediator;
 
 
 class Market implements Department {

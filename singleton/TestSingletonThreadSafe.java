@@ -1,6 +1,6 @@
-package com.dp.testsingletonthreadsafe;
+package testsingletonthreadsafe;
 
-import com.dp.testsingletonthreadsafe.TaskGetTile;
+import testsingletonthreadsafe.TaskGetTile;
 
 class TestSingletonThreadSafe {
     public static void main(String[] args) {

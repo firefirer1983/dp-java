@@ -1,6 +1,6 @@
-package com.dp.testsingletonthreadsafe;
+package testsingletonthreadsafe;
 
-import com.dp.testsingletonthreadsafe.SingletonThreadSafe;
+import testsingletonthreadsafe.SingletonThreadSafe;
 
 
 class TaskGetTile implements Runnable {

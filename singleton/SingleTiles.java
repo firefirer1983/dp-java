@@ -1,4 +1,4 @@
-package com.dp.singletiles;
+package singletiles;
 
 import java.util.LinkedList;
 import java.util.Arrays;

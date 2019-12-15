@@ -1,4 +1,4 @@
-package com.dp.command;
+package command;
 import java.util.ArrayList;
 import java.util.List;
 

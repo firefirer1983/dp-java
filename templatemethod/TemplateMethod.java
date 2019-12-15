@@ -1,4 +1,4 @@
-package com.dp.templatemethod;
+package templatemethod;
 
 
 class Withdraw extends BankingMethod {

@@ -1,4 +1,4 @@
-package com.dp.builder;
+package builder;
 
 
 public class Robot implements RobotPlan {

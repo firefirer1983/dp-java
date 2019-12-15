@@ -1,4 +1,4 @@
-package com.dp.mediator;
+package mediator;
 import java.util.HashMap;
 
 class Manager {

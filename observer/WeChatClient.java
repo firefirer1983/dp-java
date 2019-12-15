@@ -1,4 +1,4 @@
-package com.dp.observer;
+package observer;
 
 
 class WeChatClient extends IObserver {

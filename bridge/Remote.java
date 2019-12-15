@@ -1,4 +1,4 @@
-package com.dp.bridge;
+package bridge;
 
 interface Remote {
     public boolean volumnUp();

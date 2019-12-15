@@ -1,4 +1,4 @@
-package com.dp.factorymethod;
+package factorymethod;
 
 
 class Ufo extends EnemyShip {

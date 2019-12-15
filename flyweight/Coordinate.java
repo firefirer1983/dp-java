@@ -1,4 +1,4 @@
-package com.dp.flyweight;
+package flyweight;
 
 class Coordinate {
     private int x, y;

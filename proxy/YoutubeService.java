@@ -1,4 +1,4 @@
-package com.dp.proxy;
+package proxy;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package com.dp.command;
+package command;
 
 class Command {
     public static void main(String[] args) {

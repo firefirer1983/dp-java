@@ -1,4 +1,4 @@
-package com.dp.state;
+package state;
 
 
 class Room {

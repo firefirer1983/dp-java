@@ -1,4 +1,4 @@
-package com.dp.command;
+package command;
 
 
 public interface ICommand {

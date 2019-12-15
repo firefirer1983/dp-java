@@ -1,4 +1,4 @@
-package com.dp.strategy;
+package strategy;
 
 
 class NewManyStrategy implements IStrategy {

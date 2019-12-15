@@ -1,4 +1,4 @@
-package com.dp.flyweight;
+package flyweight;
 
 public interface IChess {
     void down(Coordinate cord);
