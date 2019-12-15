@@ -119,6 +119,9 @@ strategy_src = strategy/IStrategy.java \
                strategy/Context.java \
                strategy/Strategy.java
 
+templatemethod_src = templatemethod/BankingMethod.java \
+                     templatemethod/TemplateMethod.java
+
 builder: $(builder_src:.java=.class)
 
 singleton: $(singleton_src:.java=.class)
@@ -146,6 +149,8 @@ mediator: $(mediator_src:.java=.class)
 command: $(command_src:.java=.class)
 
 strategy: $(strategy_src:.java=.class)
+
+templatemethod: $(templatemethod_src:.java=.class)
 
 run:
 	@$(JVM) com/dp/$(PACKAGE)/$(target)
